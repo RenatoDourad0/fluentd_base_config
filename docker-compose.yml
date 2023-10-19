@@ -1,0 +1,7 @@
+services:
+  fleuntd:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - ./fluentd.conf:/fluentd/etc/fluentd.conf
