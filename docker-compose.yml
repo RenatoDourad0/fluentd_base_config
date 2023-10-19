@@ -7,7 +7,7 @@ services:
       - "9880:9880"
     volumes:
       - ./fluentd.conf:/fluentd/etc/fluentd.conf
-      - ./logs.json:/var/data/input/logs.json
+      - ./logs:/var/data/input/logs
     environment:
       - FLUENTD_CONF=fluentd.conf
       - GOOGLE_APPLICATION_CREDENTIALS=/var/data/google-fluentd/gcp-access.json

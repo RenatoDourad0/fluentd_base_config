@@ -7,5 +7,4 @@ COPY ./gcp-access.json /var/data/google-fluentd/gcp-access.json
 RUN ["apt-get", "update"]
 RUN ["apt-get", "install", "-y", "build-essential"]
 RUN ["gem", "install", "fluent-plugin-google-cloud", "--no-document"]
-# RUN ["gem", "install", "fluent-plugin-http", "--no-document"]
 USER fluent
