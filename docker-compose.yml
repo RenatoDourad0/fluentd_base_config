@@ -1,5 +1,5 @@
 services:
-  fleuntd:
+  fluentd:
     build:
       context: .
       dockerfile: Dockerfile
