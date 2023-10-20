@@ -1,3 +1,7 @@
+eficiencia fluent
+- quando esta parado
+- sob stress (1request/s ..., 100request/s)
+
 ### configuracao gcp
 
 - criar role com permisoes logging.logEntries.[create, route], logging.buckets.write
