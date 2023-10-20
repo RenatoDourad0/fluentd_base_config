@@ -1,14 +1,3 @@
-eficiencia fluent
-- quando esta parado
-- sob stress (1request/s ..., 100request/s)
-
-- no pc pessoal
-    - instalar fluent como servico
-        - por para monitorar um arquivo e mandar pro gcp     
-    - criar app que escreve no arquivo monitorado e expor endpoint para mandar logs
-    - teste de carga com jmeter enviando muitas requisicoes para esse endpoint (pode ser atraves do localhost ou expor no ngrog) 
-    - monitorar consumo de memoria e cpu do fluent durante teste
-
 ### configuracao gcp
 
 - criar role com permisoes logging.logEntries.[create, route], logging.buckets.write
